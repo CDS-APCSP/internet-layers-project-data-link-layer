@@ -19,16 +19,17 @@
     <aside style="position; top: 20; left: 5">
         <h3>Sections</h2>
         <ul>
-            <li><a href="#top">Home</a></li>
+            <li><a href="#top"style="color:#57302c">Home</a></li>
             <li>
-                <a href="#section1">Overview</a>
+                <a href="#section1"style="color:#57302c">Overview</a>
             </li>
             <li>
-                <a href="#section2">Sublayers</a>
+                <a href="#section2"style="color:#57302c">Sublayers</a>
             </li>
             <li>
-                <a href="#section3">Frame Formatting</a>
+                <a href="#section3"style="color:#57302c">Frame Formatting</a>
             </li>
+          <li><a href="#section4"style="color:#57302c">Sources</a></li>
         </ul>
     </aside>
   <br/>
@@ -66,13 +67,37 @@
   <br/>
         <section id="section2" style="height: 100vh">
             <h3>Sublayers</h3>
-            <p> Logical Link: Prepares data for transmission, frames network layer packet, and identifies network layer protocals. 
+            <p> Logical Link Control Layer: Prepares data for transmission.  So it controls synchronization, flow control, and checks for errors.
+              <br/>
+              <br/>
               Media Access: Addresses frames and marks beginging and end of frame.  
         </section>
         <section id="section3" style="height: 100vh">
             <h3>Frame Formatting</h3>
-            <hr>
+            <p> Ethernet frames have headers and trailers.  
+              <br/>
+              Headers have start frames (signals that a frame is coming), an address field (destination and source address) and information about data type and frame length.  
+              <br/>
+              Trailers have a frame check sequence and an optional stop frame.  
+              <br/>
+              <br/>
+              <img src = "header.png" style="height:25%;width:90%"
+                 <br/>
+              <br/>
+              <br/>
+              <img src = "trailer.png" style = "height:40%;width:80%"
+            <br/>
+ 
         </section>
+    <section id="section4" style="height: 100vh">
+      <h3>Sources</h3>
+      <br/><a
+             href="https://www.youtube.com/watch?v=pi7mMjiixiY"style="color:#57302c">Video<a/>
+               <br/><a
+             href="https://www.geeksforgeeks.org/flow-control-in-data-link-layer/#:~:text=Flow%20control%20is%20design%20issue,this%20information%20and%20process%20it"style="color:#57302c">Flow Control<a/>
+               <br/><a
+            href="https://www.geeksforgeeks.org/error-control-in-data-link-layer/"style="color:#57302c">Error Control<a/>
+              <br/><a href="https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/"style="color:#57302c">OSI Model<a/>
     </div>
 </body>
 </html>
