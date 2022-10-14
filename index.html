@@ -1,46 +1,142 @@
+<body style = "background-color: #f9f2ec;color: #57302c
+"
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How the Internet Works</title>
+    <title>The Data Link Layer</title>
 </head>
+  <style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
 <body>
     <div style="text-align: center" id="top">
-        <h1>My Team Project</h1>
+        <h1>The Data Link Layer</h1>
     </div>
     <div style="text-align: center">
-        <h2>How the Internet Works</h2>
+        <h2>With Delanie and Maya</h2>
     </div>
-    <aside style="position: fixed; top: 20; left: 5">
+    <aside style="position; top: 20; left: 5">
         <h3>Sections</h2>
         <ul>
-            <li><a href="#top">Home</a></li>
+            <li><a href="#top"style="color:#57302c">Home</a></li>
             <li>
-                <a href="#section1">Section 1</a>
+                <a href="#section1"style="color:#57302c">Overview</a>
             </li>
             <li>
-                <a href="#section2">Section 2</a>
+                <a href="#section2"style="color:#57302c">Sublayers</a>
             </li>
             <li>
-                <a href="#section3">Section 3</a>
+                <a href="#section3"style="color:#57302c">Frame Formatting</a>
             </li>
+          <li><a href="#section4"style="color:#57302c">Sources</a></li>
         </ul>
     </aside>
-    <div style="padding-left: 150px;">
-        <section id="section1" style="height: 100vh">
-            <h3>Section 1</h3>
-            <hr>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <div style="text-align: center">
+    <section id="section1" style="height: 100vh">
+        <h3>Overview</h3>
+          <div style="text-align: left; padding-left:50px;padding-right:50px"">
+            <p> The Data Link Layer is the second layer in the OSI Model.  The OSI describes the levels of systems that computers use to communicate.  This aids the sharing of data between two devices, however these devices must be on the same network.  
+              <br/>
+              <br/>
+              It breaks the packets of data from the Network Layer into peices called "Frames"  It is also responsible for flow and error control in the communication between devices on the same network.  
+              <br/>
+              <br/>
+              Flow Error: "a technique that generally observes the proper flow of data from sender to receiver. It is very essential because it is possible for sender to transmit data or information at very fast rate and hence receiver can receive this information and process it."
+              <br/>
+              <br/>
+              Error Control: "Error control is basically process in data link layer of detecting or identifying and re-transmitting data frames that might be lost or corrupted during transmission" 
+  <br/>
+  <br/>
+  <div class="container">
+    <div class="card">
+      <img src="Network Layer.png" alt="Network Layer" style="width:100%">
+  </div>
+  </div>
         </section>
+    <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+    <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
         <section id="section2" style="height: 100vh">
-            <h3>Section 2</h3>
-            <hr>
+            <h3>Sublayers</h3>
+          <div style="text-align: left; padding-left:50px;padding-right:50px"">
+            <p> Logical Link Control Layer: Prepares data for transmission.  So it controls synchronization, flow control, and checks for errors.
+              <br/>
+              <br/>
+              Media Access: Addresses frames and marks beginging and end of frame.  
         </section>
         <section id="section3" style="height: 100vh">
-            <h3>Section 3</h3>
-            <hr>
-        </section>
+            <h3>Frame Formatting</h3>
+          <div style="text-align: left; padding-left:50px;padding-right:50px">
+            <p> Ethernet frames have headers and trailers.  
+              <br/>
+              <br/>
+              Headers have start frames (signals that a frame is coming), an address field (destination and source address) and information about data type and frame length.  
+              <br/>
+              <br/>
+              Trailers have a frame check sequence and an optional stop frame.  
+              <br/>
+              <br/>   
+
+  <div class="container">
+    <div class="card">
+      <img src="header.png" alt="Header" style="width:100%">
     </div>
+  </div>
+    <br/>
+    <br/>
+            <div class="container">
+    <div class="card">
+      <img src="trailer.png" alt="Trailer" style="width:100%">
+    </div>
+  </div>
+            <br/>
+ 
+        </section>
+    <section id="section4" style="height: 100vh">
+      <h3>Sources</h3>
+      <br/><a
+             href="https://www.youtube.com/watch?v=pi7mMjiixiY"style="color:#57302c">Video<a/>
+               <br/><a
+             href="https://www.geeksforgeeks.org/flow-control-in-data-link-layer/#:~:text=Flow%20control%20is%20design%20issue,this%20information%20and%20process%20it"style="color:#57302c">Flow Control<a/>
+               <br/><a
+            href="https://www.geeksforgeeks.org/error-control-in-data-link-layer/"style="color:#57302c">Error Control<a/>
+              <br/><a href="https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/"style="color:#57302c">OSI Model<a/>
+    </div>
+                <html>
+
+
 </body>
-</html>
+</html> 
